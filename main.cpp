@@ -6,7 +6,7 @@
 //  Copyright © 2019 Harsha. All rights reserved.
 //
 
-#include "../pkt_decoder/pkt_decoder.h"
+#include "pkt_decoder.h"
 #include <iostream>
 #include <stdio.h>
 

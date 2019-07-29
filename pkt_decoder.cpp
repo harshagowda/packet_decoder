@@ -25,7 +25,7 @@ enum state
 struct pkt_decoder
 {
     uint8_t decoded_packet[MAX_DECODED_PACKET_LEN];
-    size_t decode_packet_index = 0 ;
+    size_t decode_packet_index ;
     pkt_read_fn_t printf_function;
     state decoder_state;
     void * callback_context;
@@ -38,6 +38,7 @@ pkt_decoder_t* pkt_decoder_create(pkt_read_fn_t callback, void *callback_ctx)
     decoder->printf_function = callback;
     decoder->callback_context = callback_ctx;
     decoder->decoder_state = start_state;
+    decoder->decode_packet_index = 0;
     return decoder;
 }
 
