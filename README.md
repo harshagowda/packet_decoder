@@ -1,13 +1,21 @@
 # packet_decoder
 
 To compiler :  
-              Use compile.sh which will compile the packet decoder in to a static library and will link to the test/ main.cpp
+           Use compile.sh which will compile the packet decoder in to a static library and will link to the test/ main.cpp
 
-assumptions made : 
-              anything other than STX (0x02), ETX (0x03) & Escape character (0x10) cannot be escaped and treated a invalid packet.
+Test case :
+           Locally I am using Xcode to build and test ,The test framework is XCTest ,
+           Not sure if I could use Mac OS Specific development environment so created 
+           a light weight TEST framework (validate_decoder_test),The current test 
+           framework does not handle test case with multiple packet in one write call.
 
-Compiler : GCC , Please have a look at the GCC version info below, 
-           had not got a chance to compile on any other platform or version of GCC to check if it works fine with.
+Assumptions made : 
+           anything other than STX (0x02), ETX (0x03) & Escape character (0x10) cannot 
+           be escaped and treated a invalid packet.
+
+Compiler : 
+          GCC , Please have a look at the GCC version info below, had not got a chance 
+          to compile on any other platform or version of GCC to check if it works fine with.
 
 gcc -v
 
