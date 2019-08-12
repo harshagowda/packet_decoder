@@ -1,7 +1,2 @@
-stages:
-- build
-
-job 1:
-  stage: build
-  script: sh compile.sh
-    
+build_script:
+    - sh compile.sh
