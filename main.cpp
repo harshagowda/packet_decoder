@@ -9,7 +9,8 @@
 #include "pkt_decoder.h"
 #include <iostream>
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
 //global packet for test
 typedef struct expected_result
 {
