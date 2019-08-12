@@ -1,4 +1,7 @@
-job:
-  script:
-    - uname -a
+stages:
+- build
+
+job 1:
+  stage: build
+  script: sh compile.sh
     
