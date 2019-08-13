@@ -1,11 +1,7 @@
 # packet_decoder 
 ![Build status](https://badge.buildkite.com/21879873cd814527d17e70367018a71ce8394b42eb65ad5cd2.svg?branch=feature/EnhanceQuality)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c1a40b37894a4a4b93c24d0dbdc6d6e2)](https://www.codacy.com/app/harshagowda/packet_decoder?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harshagowda/packet_decoder&amp;utm_campaign=Badge_Grade)
-
-<a href="https://scan.coverity.com/projects/harshagowda-packet_decoder">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/18984/badge.svg"/>
-</a>
+![Coverity status](https://scan.coverity.com/projects/18984/badge.svg)
 
 To compiler :  
            Use compile.sh which will compile the packet decoder in to a static library and will link to the test/ main.cpp
