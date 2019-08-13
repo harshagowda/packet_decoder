@@ -25,7 +25,7 @@ static void pkt_printer(void *ctx, size_t len, const uint8_t *data)
 {
     (void)ctx;
     
-    printf("pkt (%zd bytes) -", len);
+    printf("pkt (%d bytes) -", len);
     for(size_t i = 0; i < len; i++)
     {
         printf(" %02x", data[i]);
