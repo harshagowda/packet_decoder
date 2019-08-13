@@ -6,6 +6,10 @@ enum packet_markers
     start_transaction                  = 0x02,
     end_transaction                    = 0x03,
     escape_sequnce_begning             = 0x10,
+    /* below are not packet markersrather they are values which
+       can are values escaped , for optmization or instruction 
+       I would like to compare the unescaped values
+    */  
     unescape_value                     = 0x20,
     escape_value_start_transaction     = 0x22,
     escape_value_end_transaction       = 0x23,
