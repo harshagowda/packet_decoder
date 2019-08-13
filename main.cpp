@@ -59,7 +59,7 @@ static void validate_decoder_test(void *ctx, size_t len, const uint8_t *data)
 void run_test_case(pkt_decoder_t* decoder, const uint8_t *packet ,size_t packet_len, const uint8_t * expected_value,size_t expected_length)
 {
     memset(expect_result.expect_value_buffer,0,sizeof(expect_result.expect_value_buffer));
-    memcpy(expect_result.expect_value_buffer,expected_value,expected_length);
+    memcpy_s(expect_result.expect_value_buffer,sizeof(expect_result.expect_value_buffer),expected_value,expected_length);
     expect_result.length = expected_length;
     pkt_decoder_write_bytes(decoder, packet_len, packet);
 }
